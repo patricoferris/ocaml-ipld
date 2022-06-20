@@ -1,0 +1,5 @@
+(library
+ (name dag_cbor)
+ (public_name ipld.dag-cbor)
+ (optional)
+ (libraries ipld cbor))

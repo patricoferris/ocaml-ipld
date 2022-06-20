@@ -1,0 +1,11 @@
+(executable
+ (name test)
+ (libraries alcotest ipld ipld.dag-cbor))
+
+(rule
+ (alias runtest)
+ (deps
+  ./test.exe
+  (source_tree ../codec-fixtures))
+ (action
+  (run ./test.exe)))
